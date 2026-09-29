@@ -1,0 +1,18 @@
+{
+  "name": "FELJ | Registro de Operações",
+  "short_name": "FELJ Registros",
+  "lang": "pt-BR",
+  "start_url": "./app.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f7f4",
+  "theme_color": "#173a35",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

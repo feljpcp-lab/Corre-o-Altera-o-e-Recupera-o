@@ -1,0 +1,2637 @@
+[
+    {
+        "id":  "6474aa53-40a6-40a3-b71f-d3adff100342",
+        "client":  "Alunov",
+        "os":  "41190",
+        "reference":  "",
+        "profile":  "DES090A",
+        "type":  "Correção",
+        "description":  "Pontas e amostras.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T18:07:34.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T18:07:34.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-11T16:08:18.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "c1291181-7ff1-451b-8d6d-78f927cc4a22",
+        "client":  "Tecnoperfil",
+        "os":  "34761",
+        "reference":  "",
+        "profile":  "TR0072",
+        "type":  "Não classificado",
+        "description":  "Matriz e espina ( pinos quebrados ) · SEM pontas e amostras.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "f2373d08-5160-4e48-a833-0743d796505a",
+        "client":  "Nals alumínio",
+        "os":  "40683",
+        "reference":  "MATRIZ 40683",
+        "profile":  "LG-070/02",
+        "type":  "Não classificado",
+        "description":  "Batoque matriz · Manda orçamento olhau quebrado",
+        "assignee":  "",
+        "receivedAt":  "2026-09-11",
+        "dueAt":  "2026-09-16",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-11T18:23:42.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-11T18:23:42.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "12fed13d-4a8c-477f-9936-8cfa80d0aedd",
+        "client":  "Nals",
+        "os":  "37531",
+        "reference":  "",
+        "profile":  "LB001-11",
+        "type":  "Não classificado",
+        "description":  "Espina ( pinos quebrados ) · Espina/fio · Nals alumínio · LB-001/11",
+        "assignee":  "",
+        "receivedAt":  "2026-09-25",
+        "dueAt":  "2026-09-30",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-25T10:30:57.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-25T10:30:57.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "fc4a9215-5470-4924-b6f6-4bf393835b3c",
+        "client":  "Tecalum",
+        "os":  "41938",
+        "reference":  "",
+        "profile":  "EX7438",
+        "type":  "Não classificado",
+        "description":  "Ponta e amostra. · Espina na penetração.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-28",
+        "dueAt":  "2026-10-01",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-28T10:54:37.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-28T10:54:37.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "a9d02851-a60c-47fa-96a4-1f823b72f062",
+        "client":  "Tecnoperfil",
+        "os":  "33117",
+        "reference":  "",
+        "profile":  "TP0483",
+        "type":  "Correção",
+        "description":  "Ponta e amostra. · Foi acertado calibragem da Espina · Pino deslocado e centro fora de medida de 11mm fico com 11.10 mm",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-24T18:30:40.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "05e75001-9cc1-47e6-9abf-f2bea774a7e2",
+        "client":  "Tecalum",
+        "os":  "41300",
+        "reference":  "",
+        "profile":  "EX3053",
+        "type":  "Correção",
+        "description":  "Ponta e amostra. · Matriz/espina/CTU · Usinagem entrada espina @~Ciro Checa",
+        "assignee":  "",
+        "receivedAt":  "2026-09-14",
+        "dueAt":  "2026-09-17",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-14T09:26:04.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-14T09:26:04.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-17T13:35:31.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "5b4f0ba2-5924-4eaa-bcee-7fea258fe66d",
+        "client":  "SP Alumínio",
+        "os":  "39764",
+        "reference":  "",
+        "profile":  "SP0572-4",
+        "type":  "Correção",
+        "description":  "Pontas e amostras. · Cortado talões · Afastado pocket",
+        "assignee":  "",
+        "receivedAt":  "2026-09-22",
+        "dueAt":  "2026-09-25",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-22T09:49:37.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-22T09:49:37.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-22T18:02:09.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "02538fed-890f-41d7-95e7-cd771ffe4f72",
+        "client":  "Ferramenta EX-1950 da TECALUM é recuperação, orçamento já foi aprovado",
+        "os":  "",
+        "reference":  "MATRIZ 36635",
+        "profile":  "EX-1950",
+        "type":  "Não classificado",
+        "description":  "TECALUM",
+        "assignee":  "",
+        "receivedAt":  "2026-09-16",
+        "dueAt":  "2026-09-21",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-16T11:22:22.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-16T11:22:22.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "d0146a5d-0157-4c4c-b9c0-f302d42e968c",
+        "client":  "Mega X",
+        "os":  "40719",
+        "reference":  "",
+        "profile":  "VIS001",
+        "type":  "Correção",
+        "description":  "SEM ponta e amostra. · Foi aproximado pocket na parte de cima mas fina e foi subido mas o batoque para 5mm",
+        "assignee":  "",
+        "receivedAt":  "2026-09-14",
+        "dueAt":  "2026-09-17",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-14T09:26:04.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-14T09:26:04.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-15T17:07:09.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "5accf59f-e302-4f6e-a2ef-99e773f331f2",
+        "client":  "Wzm",
+        "os":  "31217",
+        "reference":  "",
+        "profile":  "WZM336-7",
+        "type":  "Não classificado",
+        "description":  "Somente matriz · SEM ponta e amostra.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "a82ef307-dffc-46f9-b27d-c97d258d2659",
+        "client":  "Wzm",
+        "os":  "35749",
+        "reference":  "",
+        "profile":  "WZM018-12",
+        "type":  "Correção",
+        "description":  "Espina ( parafusos quebrados) · SEM ponta e amostra. · Retirado parafusos quebrados",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-24T20:31:08.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "e5bc2c5a-b865-4556-959c-3e130491542f",
+        "client":  "Tamboré",
+        "os":  "41309",
+        "reference":  "",
+        "profile":  "TMF124-2",
+        "type":  "Não classificado",
+        "description":  "Ponta e amostra. · Matriz/CTU · Alterações de talões e pocket · Foi cortado talões",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-25T16:48:17.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "4876f530-7f75-48b8-b234-935abeac2f8c",
+        "client":  "Tecalum",
+        "os":  "41373",
+        "reference":  "",
+        "profile":  "EX3068",
+        "type":  "Não classificado",
+        "description":  "SEM pontas e amostras. · Devolução liberada · Ferramenta veio para passar alterações de correção para projeto · As alterações já foram passadas para projeto",
+        "assignee":  "",
+        "receivedAt":  "2026-09-28",
+        "dueAt":  "2026-10-01",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-28T10:54:37.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-28T10:54:37.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-28T13:54:31.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "201e508c-6f7a-4b55-a6f8-8252007d55ef",
+        "client":  "Mor",
+        "os":  "41043",
+        "reference":  "",
+        "profile":  "MTU0558RS",
+        "type":  "Alteração",
+        "description":  "Somente amostras · Mtu0559rs · Matrizes na fio para alteração.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T18:07:34.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T18:07:34.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "95ba2877-422b-4a1e-9021-0021e93d1bb0",
+        "client":  "Acr",
+        "os":  "41721",
+        "reference":  "",
+        "profile":  "FZ248M",
+        "type":  "Correção",
+        "description":  "Matriz, feeder e BA · Ponta e amostra. · ACR-extrusao · Foi abaixado os talões",
+        "assignee":  "",
+        "receivedAt":  "2026-09-17",
+        "dueAt":  "2026-09-22",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-17T10:17:21.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-17T10:17:21.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-17T14:34:03.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "4836e510-ad7c-4da5-8b20-c6f8f38f11f0",
+        "client":  "Reisam",
+        "os":  "39813",
+        "reference":  "",
+        "profile":  "RF1251-9",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T18:07:34.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T18:07:34.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-14T09:52:01.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "009f8157-0353-49f8-bd58-4d4cca59b6f4",
+        "client":  "Hyspex",
+        "os":  "41341",
+        "reference":  "",
+        "profile":  {
+
+                    },
+        "type":  "Não classificado",
+        "description":  "76190 · Pontas e amostras.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "464e009a-99b7-489e-a7c4-d37940c8e791",
+        "client":  "SP Alumínio",
+        "os":  "41586",
+        "reference":  "",
+        "profile":  "SP0670-6",
+        "type":  "Correção",
+        "description":  "Ponta e amostra. · Subido batoque na matriz 3mm por 4mm · Abaixado braço 5mm",
+        "assignee":  "",
+        "receivedAt":  "2026-09-14",
+        "dueAt":  "2026-09-17",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-14T09:26:04.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-14T09:26:04.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-14T17:33:26.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "943f67d8-7c74-4e90-a3df-8481204f09e0",
+        "client":  "SP Alumínio",
+        "os":  "415588",
+        "reference":  "",
+        "profile":  "TUB4536L",
+        "type":  "Não classificado",
+        "description":  "Pontas e amostras.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "f3bb0825-e3a3-4758-8305-bf797343df5f",
+        "client":  "Eg aluminio",
+        "os":  "",
+        "reference":  "",
+        "profile":  "MA027",
+        "type":  "Não classificado",
+        "description":  "(ferramenta cheia)",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "5bcf9ca6-c060-44ba-8fe3-acd9bc76eb61",
+        "client":  "SP Alumínio",
+        "os":  "40816",
+        "reference":  "",
+        "profile":  "MP0309L-3",
+        "type":  "Correção",
+        "description":  "Pontas e amostras. · Foi feito batoque de 5mm de largura por 4 de altura no interno da matriz · Feito batoque lado de fora · Tirado a trava do centro do pocket",
+        "assignee":  "",
+        "receivedAt":  "2026-09-22",
+        "dueAt":  "2026-09-25",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-22T09:49:37.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-22T09:49:37.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-11T17:38:38.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "7b88b7a8-479d-4ba9-a259-b0977c7e2fe4",
+        "client":  "Ica industria",
+        "os":  "38084",
+        "reference":  "",
+        "profile":  "P181",
+        "type":  "Alteração",
+        "description":  "SEM pontas e amostras. · Ica · P-180 · Alterações projeto",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T18:07:34.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T18:07:34.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "d3582d7c-ef09-4152-9714-e12dd83824b7",
+        "client":  "Entrada de correção",
+        "os":  "40159",
+        "reference":  "",
+        "profile":  "NLG-943",
+        "type":  "Correção",
+        "description":  "Nylkit · Matriz/espina · Ponta/amostra",
+        "assignee":  "",
+        "receivedAt":  "2026-09-21",
+        "dueAt":  "2026-09-24",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-21T17:00:28.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-21T17:00:28.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "6e5e265d-cef4-43e6-89f1-f87c01018c20",
+        "client":  "Cliente a identificar",
+        "os":  "",
+        "reference":  "",
+        "profile":  "WZM-018",
+        "type":  "Não classificado",
+        "description":  "Wzm-018 cliente disse que provavelmente é para tirar os parafusos, nem ele sabe direito kkk",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T14:03:39.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T14:03:39.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "eb1cf94c-34d0-4bfc-b0c8-27fdd6e48fdf",
+        "client":  "Nals",
+        "os":  "40863",
+        "reference":  "",
+        "profile":  "LG070-2",
+        "type":  "Recuperação",
+        "description":  "Matriz (olhal quebrado)",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T18:07:34.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T18:07:34.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-21T17:57:30.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "65e3ce75-5ddc-4855-b427-321d6c3fc73e",
+        "client":  "Tecnoperfil",
+        "os":  "33050",
+        "reference":  "",
+        "profile":  "TP8231",
+        "type":  "Não classificado",
+        "description":  "SEM pontas e amostras.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-28",
+        "dueAt":  "2026-10-01",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-28T10:54:37.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-28T10:54:37.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "2017600e-6308-4476-984d-d7b11fd8a69c",
+        "client":  "Tecalum",
+        "os":  "36635",
+        "reference":  "",
+        "profile":  "EX1950",
+        "type":  "Recuperação",
+        "description":  "Matriz na fio para repasse. · Recuperado biquinhos",
+        "assignee":  "",
+        "receivedAt":  "2026-09-16",
+        "dueAt":  "2026-09-21",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-16T11:33:27.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-16T11:33:27.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-16T17:58:05.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "72e62bd0-b246-434f-abcf-ef5527e6be9f",
+        "client":  "Alunov",
+        "os":  "17301",
+        "reference":  "",
+        "profile":  "ADEC2-010-6003",
+        "type":  "Não classificado",
+        "description":  "SEM ponta e amostra. · Devolução liberada · Adec 2-010-6003 · Matriz/espina",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T18:07:34.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T18:07:34.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-23T11:59:39.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "2bf15c23-916d-4cf9-b3d6-b53ab6ea1897",
+        "client":  "Tecalum",
+        "os":  "40951",
+        "reference":  "",
+        "profile":  "EX2547",
+        "type":  "Não classificado",
+        "description":  "Matriz na fio ( talão zero no porta escova)",
+        "assignee":  "",
+        "receivedAt":  "2026-09-08",
+        "dueAt":  "2026-09-11",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-08T20:31:40.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-08T20:31:40.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "547dcb45-74a9-4519-818c-fb95cbf85218",
+        "client":  "SP ALUMÍNIO",
+        "os":  "",
+        "reference":  "MATRIZ 40277",
+        "profile":  "SP-0752/02",
+        "type":  "Correção",
+        "description":  "Feito talões zero nós porta escova e fechado pocket lado de baixo · Afastado pocket no porta escova",
+        "assignee":  "",
+        "receivedAt":  "2026-09-24",
+        "dueAt":  "2026-09-29",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-24T13:22:30.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-24T13:22:30.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-25T10:29:48.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "b6f58650-e940-404f-8cea-fe6ff7aa857d",
+        "client":  "Cliente a identificar",
+        "os":  "",
+        "reference":  "",
+        "profile":  "EX-3068",
+        "type":  "Não classificado",
+        "description":  "Devolução liberada · Tecalum · Ferramenta veio para passar alterações de correção para projeto · As alterações já foram passadas para projeto",
+        "assignee":  "",
+        "receivedAt":  "2026-09-28",
+        "dueAt":  "2026-10-01",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-28T17:35:31.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-28T17:35:31.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-28T13:54:31.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "8b752e6a-395c-48d7-80a0-74a4695ce918",
+        "client":  "Eg aluminio",
+        "os":  "33797",
+        "reference":  "",
+        "profile":  "MA072",
+        "type":  "Não classificado",
+        "description":  "33797 · ( ferramenta cheia ) · Devolução ferramenta",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-21T20:37:20.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "46eb31a5-f2d1-4d2e-9e8c-1ae4812f76f8",
+        "client":  "SP Alumínio",
+        "os":  "40324",
+        "reference":  "",
+        "profile":  "SP0076L-10",
+        "type":  "Correção",
+        "description":  "Ponta e amostra.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-14",
+        "dueAt":  "2026-09-17",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-14T09:26:04.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-14T09:26:04.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-14T18:13:04.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "32c5fe23-32ea-4c30-bca8-b30dfe20556c",
+        "client":  "SP-ALUMINIO",
+        "os":  "34202",
+        "reference":  "MATRIZ 34202",
+        "profile":  "SP-0663/1",
+        "type":  "Não classificado",
+        "description":  "Batoque matriz · Matriz no ctu para usinagem.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T17:24:12.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T17:24:12.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "81d9a63a-a635-426d-b39e-92d6b5a63802",
+        "client":  "Pontal",
+        "os":  "38635",
+        "reference":  "",
+        "profile":  "NX0033-3",
+        "type":  "Não classificado",
+        "description":  "SEM pontas e amostras.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-14",
+        "dueAt":  "2026-09-17",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-14T09:26:04.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-14T09:26:04.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "4d85647f-e8e5-4349-82ac-bf29fae98e19",
+        "client":  "Tecalum",
+        "os":  "41301",
+        "reference":  "",
+        "profile":  "EX3054",
+        "type":  "Não classificado",
+        "description":  "Ponta e amostra. · Matriz/espina/CTU · Usinagem entrada da Espina",
+        "assignee":  "",
+        "receivedAt":  "2026-09-14",
+        "dueAt":  "2026-09-17",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-14T09:26:04.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-14T09:26:04.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "3da2f261-8d9a-4d44-b870-4c3a10b09c0d",
+        "client":  "TEXTRU",
+        "os":  "",
+        "reference":  "MATRIZ 34326",
+        "profile":  "JP-0005",
+        "type":  "Não classificado",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-16",
+        "dueAt":  "2026-09-21",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-16T10:53:49.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-16T10:53:49.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "8d3b79c4-8fcf-4eb9-a97e-15e1cd6f1c4b",
+        "client":  "Alumicolor",
+        "os":  "35589",
+        "reference":  "",
+        "profile":  "CG083",
+        "type":  "Correção",
+        "description":  "Mateiz Matriz e espina · SEM ponta e amostra. · Rebaixado entrada da espina 10mm.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-15",
+        "dueAt":  "2026-09-18",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-15T13:33:44.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-15T13:33:44.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-16T12:41:39.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "5d234e10-b52a-4f0e-9c03-57a868a8a546",
+        "client":  "Tecalum",
+        "os":  "41600",
+        "reference":  "",
+        "profile":  "EX3043",
+        "type":  "Correção",
+        "description":  "Pontas e amostras. · Aproximado pocket · Tirado a trava do centro do pocket",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T16:40:14.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T16:40:14.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-21T16:26:39.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "a7ae70ce-d13e-4e29-92d2-0a2615c2e9a9",
+        "client":  "Extrumax",
+        "os":  "41579",
+        "reference":  "",
+        "profile":  "LC22",
+        "type":  "Correção",
+        "description":  "Pontas e amostras. · Aberto feeder 3 mm furo 3",
+        "assignee":  "",
+        "receivedAt":  "2026-09-21",
+        "dueAt":  "2026-09-24",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-21T18:40:51.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-21T18:40:51.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-22T20:46:38.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "b595c68a-da95-43cc-8f90-d9bc8b91e0a8",
+        "client":  "Wzm",
+        "os":  "",
+        "reference":  "",
+        "profile":  "003L-14",
+        "type":  "Não classificado",
+        "description":  "Wzm 003L-14 · Pontas e amostras.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T16:40:14.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T16:40:14.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "d1c15380-c176-42f4-9fc4-3a5780e5bcd9",
+        "client":  "Textru",
+        "os":  "34326",
+        "reference":  "",
+        "profile":  "JP0006",
+        "type":  "Alteração",
+        "description":  "SEM pontas e amostras. · Jp0005 · Matriz na fio para alteração.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T18:07:34.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T18:07:34.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "7d891207-9dfa-4972-a8ca-42754d8fd51d",
+        "client":  "Tecalum",
+        "os":  "30423",
+        "reference":  "",
+        "profile":  "EX-2511/5",
+        "type":  "Não classificado",
+        "description":  "Matriz/CTU/fio · Repassar pocket · Talão · Fio",
+        "assignee":  "",
+        "receivedAt":  "2026-09-25",
+        "dueAt":  "2026-09-30",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-25T13:52:26.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-25T13:52:26.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "0f75edc0-25a1-45cd-831c-a38fc4d93032",
+        "client":  "Alumax",
+        "os":  "37251",
+        "reference":  "",
+        "profile":  "Z0201A-9",
+        "type":  "Não classificado",
+        "description":  "Matriz e BA · Pontas e amostras. · Devolução liberada · Matriz/BA",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-23T11:50:54.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "d7563b5a-8b10-4fe0-9973-3ca6d156961c",
+        "client":  "Textru",
+        "os":  "41336",
+        "reference":  "",
+        "profile":  "VLG052",
+        "type":  "Correção",
+        "description":  "SEM ponta e amostra. · Matriz, feeder e BA · Corte de talões",
+        "assignee":  "",
+        "receivedAt":  "2026-09-17",
+        "dueAt":  "2026-09-22",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-17T10:17:21.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-17T10:17:21.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-18T16:33:53.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "461d348c-3179-44d8-88af-daf168004e86",
+        "client":  "Cliente a identificar",
+        "os":  "",
+        "reference":  "",
+        "profile":  "TEX-1757",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-16",
+        "dueAt":  "2026-09-21",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-16T12:17:23.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-16T12:17:23.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "821d4473-8497-4a8a-bdb9-cf55a94ab92a",
+        "client":  "ok",
+        "os":  "",
+        "reference":  "",
+        "profile":  "FLU005",
+        "type":  "Alteração",
+        "description":  "flu005 será alterada direto na fio, após conversa com henrique e guilherme(fio) · Nals · Ajustado espessura na fio para 1.10mm a pedido do cliente.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-16",
+        "dueAt":  "2026-09-21",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-16T11:14:51.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-16T11:14:51.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-16T16:43:31.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "72dcdce5-147b-4f82-8462-a13867641796",
+        "client":  "SP Alumínio",
+        "os":  "41589",
+        "reference":  "",
+        "profile":  "SP0572-5",
+        "type":  "Correção",
+        "description":  "Pontas e amostras. · Pontas",
+        "assignee":  "",
+        "receivedAt":  "2026-09-17",
+        "dueAt":  "2026-09-22",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-17T10:17:21.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-17T10:17:21.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-11T11:44:20.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "d7c31ca7-861f-4aa8-be38-21ac4c500df4",
+        "client":  "Textru",
+        "os":  "29497",
+        "reference":  "",
+        "profile":  "VTCE2068",
+        "type":  "Não classificado",
+        "description":  "Matriz e espina(trincada) · SEM ponta e amostra.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-17",
+        "dueAt":  "2026-09-22",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-17T10:17:21.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-17T10:17:21.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "a4f2ec4c-af5d-48a9-b0c0-af9053d07ec5",
+        "client":  "SP Alumínio",
+        "os":  "40276",
+        "reference":  "",
+        "profile":  "U0990L-3",
+        "type":  "Correção",
+        "description":  "Pontas e amostras.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-14",
+        "dueAt":  "2026-09-17",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-14T09:26:04.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-14T09:26:04.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-15T16:53:01.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "5a280714-8ba0-47d4-bd80-948caa83149b",
+        "client":  "Nals alumínio",
+        "os":  "41562",
+        "reference":  "MATRIZ 41562",
+        "profile":  "FLU-005",
+        "type":  "Alteração",
+        "description":  "Alterações de espessura · Deixa a espessura com 1.1mm",
+        "assignee":  "",
+        "receivedAt":  "2026-09-11",
+        "dueAt":  "2026-09-16",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-11T18:20:43.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-11T18:20:43.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "581bd800-15f9-4b42-b4d0-58dfbb17fda7",
+        "client":  "Tamboré",
+        "os":  "41312",
+        "reference":  "",
+        "profile":  "TMR2234-14",
+        "type":  "Correção",
+        "description":  "Ponta e amostra. · Foi abaixado batoque para 2,5mm e melhorado as rampas dos talões do centro",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (OS exata); isso não confirma conclusão.",
+                            "at":  "2026-09-21T11:55:21.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "OS exata"
+    },
+    {
+        "id":  "8a173b71-ee4c-4c77-a183-148e9e2a7f72",
+        "client":  "Ica industria",
+        "os":  "38083",
+        "reference":  "",
+        "profile":  "P180",
+        "type":  "Alteração",
+        "description":  "SEM pontas e amostras. · Ica · P-181 · Alterações projeto",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T18:07:34.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T18:07:34.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "900c14ca-2e99-439f-a2c3-0a022da5ee38",
+        "client":  "Império",
+        "os":  "40924",
+        "reference":  "",
+        "profile":  "A5ALUM02",
+        "type":  "Não classificado",
+        "description":  "SEM ponta e amostra.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-25",
+        "dueAt":  "2026-09-30",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-25T10:30:57.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-25T10:30:57.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "345dc360-3078-4e2e-861b-440712e36cd1",
+        "client":  "Mor",
+        "os":  "41044",
+        "reference":  "",
+        "profile":  "MTU0559RS",
+        "type":  "Alteração",
+        "description":  "Somente amostras · Mtu0558rs · Matrizes na fio para alteração.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-10",
+        "dueAt":  "2026-09-15",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T18:07:34.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-10T18:07:34.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  false,
+        "linkMethod":  "Sem vínculo"
+    },
+    {
+        "id":  "2f8e9984-c86a-4c0f-a914-8e598e7e8476",
+        "client":  "Tamboré",
+        "os":  "41311",
+        "reference":  "",
+        "profile":  "TMR1732-15",
+        "type":  "Correção",
+        "description":  "Ponta e amostra.",
+        "assignee":  "",
+        "receivedAt":  "2026-09-18",
+        "dueAt":  "2026-09-23",
+        "status":  "Em análise",
+        "statusNote":  "Importado do WhatsApp; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:40:53.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Importado do WhatsApp; confirmar tipo, identificação e status no aplicativo.",
+                            "at":  "2026-09-18T13:40:53.0000000Z",
+                            "by":  "Importação inicial"
+                        },
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  "Em análise",
+                            "note":  "Também localizado no grupo de execução (Código único); isso não confirma conclusão.",
+                            "at":  "2026-09-08T19:46:20.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Código único"
+    },
+    {
+        "id":  "ea4c4565-268e-4478-b68f-ecd1ee958c1c",
+        "client":  "Tera Metais",
+        "os":  "",
+        "reference":  "",
+        "profile":  "EE604",
+        "type":  "Alteração",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-21T10:40:09.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-21T10:40:09.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "6b413f8b-a82b-428d-81b1-f2e93b4e5d48",
+        "client":  "Império",
+        "os":  "",
+        "reference":  "",
+        "profile":  "TUB003",
+        "type":  "Alteração",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-09T17:47:55.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-09T17:47:55.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "bf9e7281-ed98-4a38-9c29-a2dfd88931b8",
+        "client":  "Tecalum",
+        "os":  "",
+        "reference":  "",
+        "profile":  "TEX1757",
+        "type":  "Não classificado",
+        "description":  "Devolução",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-16T12:47:02.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-16T12:47:02.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "06b53e9d-3c70-4168-8d35-e1e10c234848",
+        "client":  "Extrumax",
+        "os":  "40869",
+        "reference":  "",
+        "profile":  "ACR-510",
+        "type":  "Correção",
+        "description":  "Foi subido batoque 4mm alt por 5mm lar · Foi afastado pocket nós bicos 4mm",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-08T19:42:12.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-08T19:42:12.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "c8bf0598-acaa-4697-8999-63724356bf02",
+        "client":  "Tera metais",
+        "os":  "41686",
+        "reference":  "",
+        "profile":  "",
+        "type":  "Não classificado",
+        "description":  "Carcaça PAC 250X120",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-21T20:37:20.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-21T20:37:20.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "4e350107-dd9f-4405-aac8-c74a3a259e59",
+        "client":  "SP-ALUMINIO",
+        "os":  "41585",
+        "reference":  "",
+        "profile":  "SP-0667/03",
+        "type":  "Correção",
+        "description":  "Melhorado caldeamento dos braços central · Melhorado caldeamento das alimentação · Melhorado esquadro",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-11T14:30:13.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-11T14:30:13.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "5292b114-ea9c-4ca6-bd32-337e9db16e00",
+        "client":  "Textru",
+        "os":  "",
+        "reference":  "",
+        "profile":  "VTCE2193",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T13:04:32.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-10T13:04:32.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "7af0ecb9-f136-4d53-90ef-a6914fed1a14",
+        "client":  "Tecalum",
+        "os":  "",
+        "reference":  "",
+        "profile":  "EX3046-601",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T11:20:36.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-10T11:20:36.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "aa4e6526-7cb2-4310-b8bd-8d265b7bb331",
+        "client":  "Tecalum",
+        "os":  "",
+        "reference":  "",
+        "profile":  "EX0840-3",
+        "type":  "Alteração",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T09:46:44.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-10T09:46:44.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "39ae0562-1a07-48ce-814f-0f356cb5f616",
+        "client":  "SP Alumínio",
+        "os":  "",
+        "reference":  "",
+        "profile":  "SP0752-5",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T13:05:28.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-18T13:05:28.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "4ce0b887-cf0f-43ab-9685-4fbeba109cf4",
+        "client":  "Textru",
+        "os":  "",
+        "reference":  "",
+        "profile":  "JP0005",
+        "type":  "Alteração",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-16T12:23:25.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-16T12:23:25.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "949d997a-2d95-4904-9f19-638b31649adf",
+        "client":  "Textru",
+        "os":  "",
+        "reference":  "",
+        "profile":  "VTCE2192",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T17:08:30.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-10T17:08:30.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "b79873aa-278a-4631-a763-6ca7a1c68921",
+        "client":  "RPG",
+        "os":  "",
+        "reference":  "",
+        "profile":  "GP2502",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-09T17:02:14.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-09T17:02:14.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "77f0d3f9-b967-405b-8f56-b1ded36c79ec",
+        "client":  "SB METAIS",
+        "os":  "",
+        "reference":  "",
+        "profile":  "AL15L",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-14T10:35:35.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-14T10:35:35.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "9d802311-9758-40c0-b2de-16a324f5f588",
+        "client":  "RPG-ALUMINIO (metalmax)",
+        "os":  "41348",
+        "reference":  "",
+        "profile":  "GP-2503",
+        "type":  "Correção",
+        "description":  "Subido batoque 3mm na câmera",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-09T17:10:11.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-09T17:10:11.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "116f777b-b294-47a8-8f51-1f1adb163cf0",
+        "client":  "Tecalum",
+        "os":  "41302",
+        "reference":  "",
+        "profile":  "EX-3054/1",
+        "type":  "Correção",
+        "description":  "Foi tirado batoque da entrada da Espina",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-17T12:51:16.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-17T12:51:16.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "292d62ef-ff5b-4a0c-897d-1feeabcdc133",
+        "client":  "Tecnoperfil",
+        "os":  "37110",
+        "reference":  "",
+        "profile":  "TR-0072/15",
+        "type":  "Recuperação",
+        "description":  "Recuperação de pino e espessura liberada · Devolução",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-22T20:01:41.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-22T20:01:41.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "2d182664-cea0-4e18-aca6-eb6d61bf1a7f",
+        "client":  "MA-extrusao",
+        "os":  "",
+        "reference":  "",
+        "profile":  "MA-027-1",
+        "type":  "Não classificado",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-21T20:37:20.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-21T20:37:20.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "c2491685-63ec-429e-a1ee-ed9a4e536799",
+        "client":  "Cliente a identificar",
+        "os":  "41588",
+        "reference":  "",
+        "profile":  "TUB-4536L/4",
+        "type":  "Correção",
+        "description":  "Foi cortado talões lado de dentro",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-21T20:24:15.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-21T20:24:15.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "075aab94-13a6-416a-a722-97f204501c0d",
+        "client":  "Textru",
+        "os":  "33233",
+        "reference":  "",
+        "profile":  "VTCE-2068/02",
+        "type":  "Não classificado",
+        "description":  "Devolução liberada · Devolução matriz/espina",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-28T13:57:25.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-28T13:57:25.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "a455ca4f-4c70-40c3-a686-a036dbdd7bc2",
+        "client":  "Textru",
+        "os":  "41290",
+        "reference":  "",
+        "profile":  "VA-0194",
+        "type":  "Correção",
+        "description":  "Cortado talões · Melhora caldeamento dos braços e afinado melhorado alimentação do canal da espina",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T16:50:35.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-10T16:50:35.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "e0598c8c-9a86-4e5e-bcab-e0f7bf8a9cf4",
+        "client":  "Tecalum",
+        "os":  "",
+        "reference":  "",
+        "profile":  "EX3045-601",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-10T10:25:46.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-10T10:25:46.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "e2446f42-5319-416f-98fb-785fd4018127",
+        "client":  "Nylkit",
+        "os":  "",
+        "reference":  "",
+        "profile":  "NLG943",
+        "type":  "Correção",
+        "description":  "Importado do WhatsApp; descrição precisa de revisão.",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-22T10:11:42.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-22T10:11:42.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    },
+    {
+        "id":  "9a97848c-1110-438a-8fe1-883049ded842",
+        "client":  "WZM",
+        "os":  "41713",
+        "reference":  "",
+        "profile":  "WZM-003L/14",
+        "type":  "Correção",
+        "description":  "Melhorado as alimentação e tirado a trava na entrada da Espina no centro",
+        "assignee":  "",
+        "receivedAt":  null,
+        "dueAt":  null,
+        "status":  "Em análise",
+        "statusNote":  "Importado somente do grupo de execução; revisão pendente.",
+        "completedAt":  null,
+        "createdAt":  "2026-09-18T17:00:01.0000000Z",
+        "createdBy":  "Importação inicial",
+        "history":  [
+                        {
+                            "status":  "Em análise",
+                            "previousStatus":  null,
+                            "note":  "Encontrado apenas no grupo de execução; entrada original e status precisam de revisão.",
+                            "at":  "2026-09-18T17:00:01.0000000Z",
+                            "by":  "Importação inicial"
+                        }
+                    ],
+        "source":  "WhatsApp",
+        "requiresReview":  true,
+        "executionGroupSeen":  true,
+        "linkMethod":  "Sem entrada vinculada"
+    }
+]
