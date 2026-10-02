@@ -278,6 +278,7 @@
       executionGroupSeen: row.execution_group_seen,
       createdAt: row.created_at,
       createdBy: row.created_by,
+      photoPath: row.photo_path || null,
       history: historyByRecord.get(row.id) || []
     }));
     render();
@@ -356,8 +357,27 @@
     const description = String(form.get('description')).trim();
     const assignee = String(form.get('assignee') || '').trim();
     const dueAt = dateKey(addBusinessDays(toDate(receivedAt), 3));
+    const photo = $('photo').files[0] || null;
+    if (photo && (!['image/jpeg', 'image/png', 'image/webp'].includes(photo.type) || photo.size > 5 * 1024 * 1024)) {
+      $('formError').textContent = 'A foto deve ser JPG, PNG ou WebP e ter no máximo 5 MB.';
+      return;
+    }
+    if (photo && !supabase) {
+      $('formError').textContent = 'O anexo de fotos exige conexão com a nuvem.';
+      return;
+    }
     if (supabase) {
-      const { error } = await supabase.from('correction_records').insert({
+      const recordId = crypto.randomUUID();
+      let photoPath = null;
+      if (photo) {
+        photoPath = `${recordId}/${crypto.randomUUID()}-${photo.name.replace(/[^a-zA-Z0-9._-]/g, '_')}`;
+        const { error: uploadError } = await supabase.storage.from('correction-photos').upload(photoPath, photo, { contentType: photo.type, upsert: false });
+        if (uploadError) {
+          $('formError').textContent = `Não foi possível enviar a foto: ${uploadError.message}`;
+          return;
+        }
+      }
+      const { error } = await supabase.from('correction_records').insert({ id: recordId, photo_path: photoPath,
         client, os: os || null, reference: reference || null, profile_code: profile || null,
         request_type: kind, description, assignee: assignee || null,
         received_at: receivedAt, due_at: dueAt, status: 'Entrada registrada',
@@ -436,6 +456,17 @@
     $('updateNote').value = '';
     $('reviewPrompt').hidden = !record.requiresReview;
     $('confirmReview').hidden = !record.requiresReview;
+    $('detailPhotoSection').hidden = true;
+    $('detailPhoto').removeAttribute('src');
+    $('detailPhotoLink').removeAttribute('href');
+    if (record.photoPath && supabase) {
+      const { data, error } = await supabase.storage.from('correction-photos').createSignedUrl(record.photoPath, 3600);
+      if (!error && data?.signedUrl && selectedId === record.id) {
+        $('detailPhoto').src = data.signedUrl;
+        $('detailPhotoLink').href = data.signedUrl;
+        $('detailPhotoSection').hidden = false;
+      }
+    }
     $('detailFields').innerHTML = [
       ['OS', record.os], ['Referência', record.reference], ['Código do perfil', record.profile],
       ['Responsável', record.assignee], ['Entrada', formatDate(record.receivedAt)],
