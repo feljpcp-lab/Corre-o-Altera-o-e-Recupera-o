@@ -1,4 +1,4 @@
-const CACHE_NAME = 'felj-registro-v3';
+const CACHE_NAME = 'felj-registro-v4';
 const APP_SHELL = ['./app.html', './app.js', './cloud-config.js', './initial-records.json', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', event => {
