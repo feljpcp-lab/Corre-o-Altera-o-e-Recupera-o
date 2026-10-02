@@ -408,9 +408,12 @@
         $('formError').textContent = `Não foi possível gravar: ${error.message}`;
         return;
       }
+      const { error: emailError } = await supabase.functions.invoke('notify-new-record', {
+        body: { client, os, reference, profile_code: profile, request_type: kind, description, assignee, received_at: receivedAt, due_at: dueAt, status: 'Entrada registrada' }
+      });
       await loadCloudRecords();
       $('entryDialog').close();
-      toast('Entrada registrada na nuvem');
+      toast(emailError ? 'Entrada salva; aviso por e-mail ainda não enviado' : 'Entrada registrada e aviso enviado ao PCP');
       return;
     }
     const now = new Date().toISOString();
