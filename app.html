@@ -3,11 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#173a35">
+<meta name="theme-color" content="#202b2a">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
-<style>.connection{border:0;background:transparent;padding:0;cursor:pointer;font:inherit}</style>
+<style>.connection{border:0;background:transparent;padding:0;cursor:pointer;font:inherit}
+/* FELJ visual refresh: identidade industrial, contraste e leitura */
+:root{--ink:#202c2a;--muted:#66736f;--paper:#f1f3f2;--white:#fff;--line:#d9dfdc;--green:#176b57;--green-soft:#e5f1ec;--orange:#b64b35;--orange-soft:#f9eae5;--yellow:#87651c;--yellow-soft:#f8f0d9;--blue:#426f89;--blue-soft:#e8f0f5;--shadow:0 8px 24px #1c30290c}
+body{font-family:Manrope,"Segoe UI",sans-serif;background:var(--paper)}
+.topbar{height:64px;background:#202b2a;border-bottom:3px solid #347e68;box-shadow:0 3px 14px #15262218}
+.brand{font-size:13px;letter-spacing:.045em}.brand-mark{width:34px;height:34px;border-radius:8px;background:#2b3936;border-color:#80b49a;color:#c2e7d1;font-weight:800}
+.shell{padding-top:30px}.page-head{margin-bottom:20px}.page-head h1{letter-spacing:-.035em}.eyebrow{letter-spacing:.12em;font-weight:700}
+.primary{border-radius:7px;background:#176b57;box-shadow:0 3px 9px #176b5724;transition:background .16s,transform .16s,box-shadow .16s}.primary:hover{background:#105844;box-shadow:0 5px 13px #176b5730;transform:translateY(-1px)}
+.notice{border-radius:0 7px 7px 0}.exec-panel{border-radius:12px;padding:22px;border-color:#d5deda;box-shadow:0 10px 30px #1c30290b}.exec-heading h2{letter-spacing:-.025em}.exec-kpis{border-radius:9px;overflow:hidden;background:#f6f8f7}.exec-kpi{padding:15px}.exec-kpi strong{letter-spacing:-.04em}.exec-kpi:first-child strong{color:#176b57}.exec-kpi:nth-child(4) strong{color:#b64b35}.exec-bar-track{height:8px;border-radius:8px}.exec-bar-track i{background:linear-gradient(90deg,#176b57,#4b9a7b);border-radius:8px}.exec-overdue-item{padding:10px 2px}.metrics{background:#fff;border:1px solid var(--line);border-radius:9px;padding:0 15px;margin-bottom:21px}.metric{padding-top:15px;padding-bottom:15px}.metric-value{letter-spacing:-.04em}.toolbar{gap:10px;padding:13px 0}.field,select,textarea{border-radius:7px;transition:border-color .15s,box-shadow .15s}.field:focus,select:focus,textarea:focus{border-color:#4b8c77;box-shadow:0 0 0 3px #176b5718}.section-title{padding:12px 2px 10px}.section-title h2{font-size:13px}.records{gap:10px}.record{border-radius:9px;padding:15px 16px;box-shadow:0 3px 12px #1c302908;transition:box-shadow .15s,border-color .15s,transform .15s}.record:hover{border-color:#b9cbc2;box-shadow:0 7px 20px #1c302912;transform:translateY(-1px)}.record-title strong{letter-spacing:-.01em}.badge{border-radius:5px;padding:4px 8px}.text-button,.secondary,.icon-button{border-radius:7px;transition:background .15s,border-color .15s}.text-button:hover,.secondary:hover,.icon-button:hover{border-color:#9ab5a8;background:#f2f7f4}.empty{border-radius:9px;padding:48px 20px}.page-foot{font-size:10px;padding:7px 2px}.dialog-inner{padding:22px 23px 23px}.dialog-head{padding-bottom:15px}.dialog-head h2{letter-spacing:-.02em}.form-field label{font-size:11px}.form-field input,.form-field select{border-radius:7px}.form-field textarea{border-radius:7px}.detail-item{background:#f0f4f1;border:1px solid #e1e8e3;border-radius:7px;padding:10px}.history-item:before{box-shadow:0 0 0 3px #e5f1ec}.toast{border-radius:8px;box-shadow:0 8px 25px #132a2340}
+@media(max-width:800px){.topbar{height:58px}.shell{padding-top:20px}.exec-panel{border-radius:10px}.record{border-radius:8px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+</style>
 <title>Registro de Correções | FELJ</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
@@ -15,12 +27,12 @@
 </style>
 </head>
 <body>
-<header class="topbar"><div class="brand"><span class="brand-mark">F</span> FELJ <span style="color:#9cb3a9;font-weight:500">/ REGISTRO DE OPERAÇÕES</span></div><button id="connectionState" class="connection" type="button" aria-label="Conexão e conta"><i></i><span>Modo local</span></button></header>
+<header class="topbar"><div class="brand"><span class="brand-mark">F</span> FELJ <span style="color:#b5c5bf;font-weight:500">/ FERRAMENTARIA DE EXTRUSÃO</span></div><button id="connectionState" class="connection" type="button" aria-label="Conexão e conta"><i></i><span>Modo local</span></button></header>
 <main class="shell">
-  <section class="page-head"><div><p class="eyebrow">ENTRADAS · ACOMPANHAMENTO</p><h1>Correções e alterações</h1><p>Registre a solicitação e acompanhe o andamento em um só lugar.</p></div><button id="newRecord" class="primary desktop-add" type="button"><span class="plus">+</span>Novo registro</button></section>
+  <section class="page-head"><div><p class="eyebrow">QUALIDADE · ENGENHARIA · ATENDIMENTO</p><h1>Correções e alterações</h1><p>Controle das solicitações de ferramentaria, do registro à conclusão.</p></div><button id="newRecord" class="primary desktop-add" type="button"><span class="plus">+</span>Novo registro</button></section>
   <div id="connectionNotice" class="notice">Demonstração local: os registros ficam salvos somente neste navegador. A sincronização em nuvem será ativada após configurar o projeto da empresa.</div>
   <section class="exec-panel" aria-label="Painel executivo">
-    <div class="exec-heading"><div><p class="eyebrow">VISÃO GERENCIAL</p><h2>Painel executivo</h2><p>Resumo consolidado das solicitações registradas.</p></div><span class="exec-live"><i></i>Dados do sistema</span></div>
+    <div class="exec-heading"><div><p class="eyebrow">VISÃO GERENCIAL</p><h2>Painel executivo</h2><p>Acompanhamento operacional das solicitações e dos prazos.</p></div><span class="exec-live"><i></i>Dados do sistema</span></div>
     <div class="exec-kpis">
       <div class="exec-kpi"><span>Total de solicitações</span><strong id="execTotal">0</strong></div>
       <div class="exec-kpi"><span>Em aberto</span><strong id="execOpen">0</strong></div>
