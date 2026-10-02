@@ -162,6 +162,27 @@
     $('metricTotal').textContent = records.length;
     $('metricOpen').textContent = records.filter(record => !isClosed(record)).length;
     $('metricLate').textContent = records.filter(isOverdue).length;
+    const openRecords = records.filter(record => !isClosed(record));
+    const completed = records.filter(record => record.status === 'Concluída');
+    const overdue = records.filter(isOverdue);
+    const completionRate = records.length ? Math.round(completed.length / records.length * 100) : 0;
+    $('execTotal').textContent = records.length;
+    $('execOpen').textContent = openRecords.length;
+    $('execCompleted').textContent = completed.length;
+    $('execOverdue').textContent = overdue.length;
+    $('execRate').textContent = completionRate + '%';
+    const statusCounts = statuses.map(value => ({ label: value, count: records.filter(record => record.status === value).length })).filter(item => item.count);
+    const typeCounts = types.map(value => ({ label: value, count: records.filter(record => record.type === value).length })).filter(item => item.count);
+    const bars = items => items.length ? items.map(item => {
+      const width = records.length ? Math.max(3, Math.round(item.count / records.length * 100)) : 0;
+      return '<div class="exec-bar-row"><div class="exec-bar-label"><span>' + escapeHtml(item.label) + '</span><strong>' + item.count + '</strong></div><div class="exec-bar-track"><i style="width:' + width + '%"></i></div></div>';
+    }).join('') : '<p class="exec-empty">Ainda não há dados para exibir.</p>';
+    $('execStatusBars').innerHTML = bars(statusCounts);
+    $('execTypeBars').innerHTML = bars(typeCounts);
+    $('execOverdueList').innerHTML = overdue.length ? overdue.slice().sort((a,b) => (a.dueAt || '').localeCompare(b.dueAt || '')).slice(0,5).map(record =>
+      '<div class="exec-overdue-item"><span><strong>' + escapeHtml(record.client) + '</strong><small>' + escapeHtml(record.type) + ' · Prazo ' + escapeHtml(formatDate(record.dueAt)) + '</small></span><b>' + escapeHtml(record.status) + '</b></div>'
+    ).join('') : '<p class="exec-empty">Nenhuma solicitação fora do prazo.</p>';
+
     $('resultCount').textContent = `${filtered.length} ${filtered.length === 1 ? 'registro' : 'registros'}`;
     $('recordsList').innerHTML = filtered.map(record => {
       const late = isOverdue(record);
@@ -445,7 +466,7 @@
     }
   }
 
-  function openDetail(id) {
+  async function openDetail(id) {
     selectedId = id;
     const record = records.find(item => item.id === id);
     if (!record) return;
