@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FELJ Industrial ERP</title>
+<link rel="icon" href="./icon.svg"><link rel="stylesheet" href="./erp.css">
+</head>
+<body>
+<div id="app">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">F</div><div><strong>FELJ</strong><small>INDUSTRIAL ERP</small></div></div>
+  <nav id="nav">
+    <button data-page="dashboard" class="active">Dashboard</button>
+    <button data-page="clientes">Comercial</button>
+    <button data-page="engenharia">Engenharia</button>
+    <button data-page="os">Ordens de Serviço</button>
+    <button data-page="pcp">PCP / APS</button>
+    <button data-page="producao">Chão de Fábrica</button>
+    <button data-page="estoque">Materiais / Estoque</button>
+    <button data-page="qualidade">Qualidade</button>
+    <button data-page="custos">Custos</button>
+    <button data-page="expedicao">Faturamento / Expedição</button>
+    <button data-page="correcoes">Correções</button>
+  </nav>
+  <div class="sidebar-bottom"><span id="connection">Conectando…</span><button id="logout">Sair</button></div>
+</aside>
+<main class="main">
+<header><div><span class="eyebrow">GESTÃO INDUSTRIAL</span><h1 id="pageTitle">Visão executiva</h1></div><div class="header-actions"><input id="globalSearch" placeholder="Pesquisar OS, cliente, desenho, lote…"><button id="newAction" class="primary">+ Novo</button></div></header>
+<section id="content"></section>
+</main>
+</div>
+<dialog id="authDialog"><form method="dialog" id="authForm"><h2>Acesso FELJ</h2><p>Entre com sua conta Supabase.</p><input id="email" type="email" placeholder="E-mail" required><input id="password" type="password" placeholder="Senha" required><div id="authError" class="error"></div><button class="primary" type="submit">Entrar</button></form></dialog>
+<dialog id="recordDialog"><form method="dialog" id="recordForm"><div class="dialog-head"><h2 id="recordTitle">Novo registro</h2><button type="button" data-close>×</button></div><div id="recordFields"></div><div id="recordError" class="error"></div><div class="dialog-actions"><button type="button" data-close>Cancelar</button><button class="primary" type="submit">Salvar</button></div></form></dialog>
+<script src="./cloud-config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="./erp.js"></script>
+</body></html>
