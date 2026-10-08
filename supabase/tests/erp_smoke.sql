@@ -1,0 +1,10 @@
+begin;
+select plan(6);
+select has_table('public','ordens_servico','OS table exists');
+select has_table('public','componentes_os','components table exists');
+select has_table('public','operacoes_producao','production operations table exists');
+select has_table('public','lotes_materiais','material lots table exists');
+select has_table('public','inspecoes','quality inspections table exists');
+select has_view('public','v_os_360','OS 360 view exists');
+select * from finish();
+rollback;
