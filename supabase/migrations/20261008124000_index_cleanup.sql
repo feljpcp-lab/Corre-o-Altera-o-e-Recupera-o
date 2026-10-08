@@ -1,0 +1,5 @@
+drop index if exists public.fkidx_91771a667d8836cbd525e74e2a1408ec;
+drop index if exists public.fkidx_2b8a0829f565f2e29a2ef02e1cf98b13;
+drop index if exists public.fkidx_1f8e5baed0136cd832c554fe0ae248b8;
+drop index if exists public.fkidx_4f23fd227cfd30cf4edec8acdb13769e;
+drop index if exists public.fkidx_739108e0d2552c72e9d0368a17675666;
