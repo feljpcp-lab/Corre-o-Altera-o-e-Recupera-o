@@ -32,9 +32,16 @@
   }
   function render(){
     const list=filtered(),review=links.filter(x=>x.status==='CONFERIR VÍNCULO').length,open=links.filter(x=>x.status==='EM ABERTO').length;
+    const done=links.filter(x=>x.status==='EXECUTADA').length;
     const late=entries.filter(e=>e.due_date&&e.due_date<today()&&!closed(linkFor(e.id).status)).length;
     $('kEntries').textContent=entries.length;$('kExecutions').textContent=executions.length;
-    $('kReview').textContent=review;$('kOpen').textContent=open;$('kLate').textContent=late;
+    $('kExecuted').textContent=done;$('kReview').textContent=review;$('kOpen').textContent=open;$('kLate').textContent=late;
+    const bars=(items,total)=>items.length?items.map(([label,count])=>'<div class="barrow"><div class="barlabel"><span>'+esc(label)+'</span><strong>'+count+'</strong></div><div class="track"><i style="width:'+Math.max(2,Math.round(count/Math.max(total,1)*100))+'%"></i></div></div>').join(''):'<div class="muted">Sem dados.</div>';
+    const byType=Object.entries(entries.reduce((a,e)=>(a[e.service_type||'Não classificado']=(a[e.service_type||'Não classificado']||0)+1,a),{})).sort((a,b)=>b[1]-a[1]);
+    const byClient=Object.entries(entries.reduce((a,e)=>(a[e.extrusora||'Não identificada']=(a[e.extrusora||'Não identificada']||0)+1,a),{})).sort((a,b)=>b[1]-a[1]).slice(0,8);
+    $('byType').innerHTML=bars(byType,entries.length);$('byExtrusora').innerHTML=bars(byClient,entries.length);
+    const cycle=links.filter(l=>l.status==='EXECUTADA'&&l.execution_id).map(l=>{const e=entries.find(v=>v.id===l.entry_id),x=executions.find(v=>v.id===l.execution_id);return e?.entry_date&&x?.execution_date?(Date.parse(x.execution_date)-Date.parse(e.entry_date))/86400000:null;}).filter(v=>v!==null&&v>=0);
+    $('cycleMetric').textContent=cycle.length?(cycle.reduce((a,b)=>a+b,0)/cycle.length).toFixed(1).replace('.',','):'—';
     $('resultCount').textContent=list.length+' de '+entries.length+' entradas';
     const years=[...new Set(entries.map(e=>String(e.entry_date||'').slice(0,4)).filter(Boolean))].sort().reverse();
     const old=$('filterYear').value;
