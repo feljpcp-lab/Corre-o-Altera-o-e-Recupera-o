@@ -100,11 +100,16 @@
     return businessDaysBetween(start, end);
   }
 
+  function slaDays(record) {
+    if (record.type === 'Correção') return 3;
+    if (record.type === 'Alteração') return 5;
+    return null; // Recuperação e tipo não classificado aguardam regra formal.
+  }
+
   function isOverdue(record) {
-    if (record.status === 'Cancelada') return false;
-    if (record.requiresReview) return false;
-    if (!record.receivedAt) return false;
-    if (record.status === 'Concluída') return leadDays(record) > 3;
+    if (record.status === 'Cancelada' || record.requiresReview) return false;
+    if (!record.receivedAt || !record.dueAt) return false;
+    if (record.status === 'Concluída') return Boolean(slaDays(record)) && leadDays(record) > slaDays(record);
     const dueDate = toDate(record.dueAt);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -187,9 +192,11 @@
     $('recordsList').innerHTML = filtered.map(record => {
       const late = isOverdue(record);
       const duration = leadDays(record);
-      const sla = record.status === 'Concluída'
-        ? duration === null ? 'Data de entrada a revisar' : `Concluída em ${duration} dias úteis`
-        : !record.receivedAt ? 'Data de entrada a revisar' : late ? 'Prazo vencido' : `Prazo ${formatDate(record.dueAt)}`;
+      const allowedDays = slaDays(record);
+      const sla = !record.receivedAt ? 'Data de entrada a revisar'
+        : !allowedDays ? 'SLA não definido'
+        : record.status === 'Concluída' ? duration === null ? 'Data de entrada a revisar' : `Concluída em ${duration} dias úteis (limite ${allowedDays})`
+        : !record.dueAt ? 'Prazo não calculado' : late ? 'Prazo vencido' : `Prazo ${formatDate(record.dueAt)}`;
       const code = record.profile ? `Perfil ${escapeHtml(record.profile)}` : '';
       const os = record.os ? `OS ${escapeHtml(record.os)}` : '';
       const reference = record.reference ? escapeHtml(record.reference) : '';
@@ -377,7 +384,8 @@
     const kind = String(form.get('kind'));
     const description = String(form.get('description')).trim();
     const assignee = String(form.get('assignee') || '').trim();
-    const dueAt = dateKey(addBusinessDays(toDate(receivedAt), 3));
+    const allowedDays = kind === 'Correção' ? 3 : kind === 'Alteração' ? 5 : null;
+    const dueAt = allowedDays ? dateKey(addBusinessDays(toDate(receivedAt), allowedDays)) : null;
     const photo = $('photo').files[0] || null;
     if (photo && (!['image/jpeg', 'image/png', 'image/webp'].includes(photo.type) || photo.size > 5 * 1024 * 1024)) {
       $('formError').textContent = 'A foto deve ser JPG, PNG ou WebP e ter no máximo 5 MB.';
