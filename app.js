@@ -578,16 +578,121 @@
   // Importação revisável de exportações TXT do WhatsApp.
   (function setupWhatsAppImport(){
     const modal=$('whatsappImportDialog'); if(!modal || !$('importWhatsApp')) return;
-    let parsed=[], importClient=null;
+    let parsed=[], importClient=null, interpretation=null;
     const esc=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     function dateKey(raw){const m=raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);if(!m)return '';let y=+m[3];if(y<100)y+=2000;const d=new Date(y,+m[2]-1,+m[1]);if(d.getFullYear()!==y||d.getMonth()!==+m[2]-1||d.getDate()!==+m[1])return '';return y+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
     function parse(text){const out=[];let cur=null;const ps=[/^\[?(\d{1,2}\/\d{1,2}\/\d{2,4}),?\s+(\d{1,2}:\d{2})(?::\d{2})?\]?\s+([^:]+?):\s?(.*)$/,/^(\d{1,2}\/\d{1,2}\/\d{2,4}),?\s+(\d{1,2}:\d{2})(?:\s*-\s*|\s+)([^:]+?):\s?(.*)$/];text.replace(/^\uFEFF/,'').replace(/\r\n?/g,'\n').split('\n').forEach(line=>{let m=null;for(const p of ps){m=line.match(p);if(m)break;}if(m){if(cur)out.push(cur);cur={date:dateKey(m[1]),time:m[2],sender:m[3].trim(),text:m[4].trim()};}else if(cur&&line.trim())cur.text+='\n'+line.trim();});if(cur)out.push(cur);return out.filter(m=>m.text&&!/^(mensagens e chamadas são protegidas|messages and calls are end-to-end encrypted|<mídia oculta>|media omitted)/i.test(m.text));}
     function render(){ $('whatsappPreview').innerHTML=parsed.map((c,i)=>'<article data-i="'+i+'" style="border:1px solid var(--line);background:white;border-radius:7px;padding:12px;display:grid;gap:8px"><label><input type="checkbox" data-k="include" '+(c.include?'checked':'')+'> Importar mensagem '+(i+1)+' · '+esc(c.date||'Data não identificada')+' · '+esc(c.sender)+'</label><div class="form-grid"><div class="form-field"><label>Cliente / Extrusora *</label><input class="field" data-k="client" value="'+esc(c.client)+'" placeholder="Preencher cliente"></div><div class="form-field"><label>OS</label><input class="field" data-k="os" value="'+esc(c.os)+'"></div><div class="form-field"><label>Referência</label><input class="field" data-k="reference" value="'+esc(c.reference)+'"></div><div class="form-field"><label>Tipo</label><select class="field" data-k="type">'+['Correção','Recuperação','Alteração','Não classificado'].map(t=>'<option '+(c.type===t?'selected':'')+'>'+t+'</option>').join('')+'</select></div><div class="form-field full"><label>Descrição original</label><textarea data-k="description">'+esc(c.text)+'</textarea></div><div class="form-field"><label>Responsável / remetente</label><input class="field" data-k="assignee" value="'+esc(c.sender)+'"></div><div class="form-field"><label>Data de entrada</label><input class="field" type="date" data-k="receivedAt" value="'+esc(c.date)+'"></div></div><small>Confira se é uma nova solicitação. Desmarque mensagens que sejam apenas atualizações.</small></article>').join('');$('whatsappSave').disabled=!parsed.some(c=>c.include);}
     function collect(){document.querySelectorAll('#whatsappPreview [data-i]').forEach(card=>{const c=parsed[+card.dataset.i];card.querySelectorAll('[data-k]').forEach(el=>c[el.dataset.k]=el.dataset.k==='include'?el.checked:el.value);});}
     $('importWhatsApp').addEventListener('click',()=>{modal.showModal();$('whatsappFile').value='';$('whatsappPreview').innerHTML='';$('whatsappSave').disabled=true;$('whatsappImportMessage').textContent='Selecione a exportação .txt do WhatsApp.';parsed=[];});
-    $('whatsappFile').addEventListener('change',async e=>{const f=e.target.files&&e.target.files[0];if(!f)return;if(f.size>10*1024*1024){$('whatsappImportMessage').textContent='Arquivo acima de 10 MB. Divida a exportação.';return;}const msgs=parse(await f.text());parsed=msgs.map(m=>{const os=m.text.match(/\b(?:OS\s*[:#-]?\s*)?(\d{4,6})\b/i),ref=m.text.match(/\b(?:matriz|refer[eê]ncia)\s*[:#-]?\s*([A-Z0-9./_-]+)/i);return {include:Boolean(os||ref),date:m.date,sender:m.sender,text:m.text,client:'',os:os?os[1]:'',reference:ref?ref[1]:'',type:/recupera|recondicion/i.test(m.text)?'Recuperação':/altera|modifica|mudança/i.test(m.text)?'Alteração':'Correção',assignee:m.sender};});$('whatsappImportMessage').textContent=msgs.length?msgs.length+' mensagens identificadas. Linhas de continuação foram agrupadas. Revise cada item antes de importar.':'Não reconheci o formato. Exporte a conversa como .txt.';render();});
+    $('whatsappFile').addEventListener('change',async e=>{
+      const f=e.target.files&&e.target.files[0]; if(!f)return;
+      if(f.size>10*1024*1024){$('whatsappImportMessage').textContent='Arquivo acima de 10 MB. Divida a exportação.';return;}
+      if(!window.FELJWhatsAppInterpreter){$('whatsappImportMessage').textContent='Biblioteca do interpretador não carregada. Atualize a página.';return;}
+      interpretation=window.FELJWhatsAppInterpreter.interpret(await f.text());
+      parsed=interpretation.candidates.map(c=>({
+        include:c.kind==='entry'||c.kind==='execution',
+        kind:c.kind,date:c.date,sender:c.sender,text:c.text,client:'',
+        os:c.os||'',reference:c.tool||'',tool:c.tool||'',type:c.serviceType,
+        assignee:c.sender,components:c.components.join(', '),stage:c.stage||'',
+        state:c.state||'',confidence:c.confidence,needsReview:c.needsReview,
+        reviewReason:c.reviewReason||''
+      }));
+      $('whatsappImportMessage').textContent=interpretation.summary.messages+' mensagens analisadas: '+
+        interpretation.summary.entries+' entradas, '+interpretation.summary.executions+' execuções, '+
+        interpretation.summary.updates+' atualizações e '+interpretation.summary.review+' para revisão. '+
+        'Confira os dados antes de gravar.';
+      render();
+    });
     $('whatsappPreview').addEventListener('input',collect);$('whatsappPreview').addEventListener('change',()=>{collect();$('whatsappSave').disabled=!parsed.some(c=>c.include);});
-    $('whatsappSave').addEventListener('click',async()=>{collect();const chosen=parsed.filter(c=>c.include);if(!chosen.length)return;if(chosen.some(c=>!c.client.trim()||!c.description.trim()||(!c.os.trim()&&!c.reference.trim()))){$('whatsappImportMessage').textContent='Preencha cliente e OS ou referência nos itens selecionados.';return;}$('whatsappSave').disabled=true;try{if(!supabase||!currentUser)throw new Error('Entre na conta da equipe antes de importar.');const q=await supabase.from('correction_records').select('client,os,reference,description').limit(5000);if(q.error)throw q.error;const norm=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();const seen=new Set((q.data||[]).map(r=>[r.client,r.os,r.reference,r.description].map(norm).join('|')));let duplicates=0;const rows=[];chosen.forEach(c=>{const key=[c.client,c.os,c.reference,c.description].map(norm).join('|');if(seen.has(key)){duplicates++;return;}seen.add(key);const received=c.receivedAt||new Date().toISOString().slice(0,10),due=addBusinessDays(toDate(received),3);rows.push({id:crypto.randomUUID(),client:c.client.trim(),os:c.os.trim()||null,reference:c.reference.trim()||null,profile_code:null,request_type:c.type,description:c.description.trim(),assignee:c.assignee.trim()||null,received_at:received,due_at:dateKey(due),status:'Entrada registrada',status_note:'Importado do WhatsApp; aguardando revisão.',source:'whatsapp',requires_review:true,execution_group_seen:false});});if(!rows.length){$('whatsappImportMessage').textContent='Nenhum registro novo. '+duplicates+' possível(is) duplicidade(s) ignorada(s).';$('whatsappSave').disabled=false;return;}const ins=await supabase.from('correction_records').insert(rows);if(ins.error)throw ins.error;$('whatsappImportMessage').textContent='Importados '+rows.length+' registros; '+duplicates+' duplicidade(s) ignorada(s). Atualizando a tela...';await loadCloudRecords();$('whatsappPreview').innerHTML='';$('whatsappSave').disabled=true;setTimeout(()=>modal.close(),1800);}catch(err){$('whatsappImportMessage').textContent='Falha na importação: '+err.message;$('whatsappSave').disabled=false;}});
+    $('whatsappSave').addEventListener('click',async()=>{
+      collect();
+      const chosen=parsed.filter(c=>c.include);
+      const entries=chosen.filter(c=>c.kind==='entry');
+      const executions=chosen.filter(c=>c.kind==='execution');
+      if(!chosen.length){$('whatsappImportMessage').textContent='Marque ao menos uma entrada ou execução.';return;}
+      if(!supabase||!currentUser){$('whatsappImportMessage').textContent='Entre na conta da equipe antes de importar.';return;}
+      $('whatsappSave').disabled=true;
+      const hash=value=>{let h=2166136261;for(let i=0;i<value.length;i++){h^=value.charCodeAt(i);h=Math.imul(h,16777619);}return (h>>>0).toString(16).padStart(8,'0');};
+      const clean=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
+      const sourceName=$('whatsappFile').files[0]?.name||'Exportação WhatsApp';
+      try{
+        const rawText=await $('whatsappFile').files[0].text();
+        const fingerprint=hash(rawText);
+        const eventRows=interpretation.messages.map((m,i)=>{
+          const candidates=interpretation.candidates.filter(c=>c.date===m.date&&c.time===m.time&&c.sender===m.sender&&c.text===m.text);
+          const c=candidates.length===1?candidates[0]:null;
+          const key=[m.date,m.time,m.sender,m.text].join('|');
+          return {id:'event-'+hash(key),source_key:'wa-event:'+hash(key),source_name:sourceName,
+            message_date:m.date||null,message_time:m.time||null,sender:m.sender,message_text:m.text,
+            classification:c?.kind||'review',os:c?.os||null,tool_code:c?.tool||null,
+            components:c?.components||[],service_type:c?.serviceType||'Não classificado',
+            operational_stage:c?.stage||null,operational_state:c?.state||null,
+            review_required:!c||Boolean(c.needsReview),legacy_data:{raw_lines:m.rawLines,candidate_count:candidates.length}}
+        });
+        if(eventRows.length){
+          const ev=await supabase.from('felj_message_events').upsert(eventRows,{onConflict:'source_key',ignoreDuplicates:true});
+          if(ev.error)throw ev.error;
+        }
+        const existing=await supabase.from('felj_entries').select('extrusora,tool_code,os,service_type,entry_date').limit(5000);
+        if(existing.error)throw existing.error;
+        const signatures=new Set((existing.data||[]).map(r=>[r.entry_date||'',clean(r.extrusora),clean(r.tool_code),clean(r.os),clean(r.service_type)].join('|')));
+        const makeKey=c=>[c.date||'',clean(c.client||'Não identificado'),clean(c.tool),clean(c.os),clean(c.type)].join('|');
+        const newEntries=entries.filter(c=>!signatures.has(makeKey(c)));
+        const entryRows=newEntries.map(c=>{
+          const key=[c.date,c.sender,c.text,c.os,c.tool,'entry'].join('|'), id='entry-'+hash(key);
+          const allowed=c.type==='Correção'?3:c.type==='Alteração'?5:null;
+          const due=allowed&&c.date?dateKey(addBusinessDays(toDate(c.date),allowed)):null;
+          return {id,source_key:'wa-entry:'+hash(key),source_name:sourceName,
+            extrusora:c.client.trim()||'Não identificado',tool_code:c.tool||null,os:c.os||null,
+            reference:null,service_type:c.type||'Não classificado',entry_date:c.date||null,
+            received_at:c.date||null,description:c.text, due_date:due,deadline_source:allowed?'sla_'+allowed+'_business_days':'none',
+            operational_stage:c.stage||null,operational_state:c.state||null,
+            operational_updated_at:c.stage||c.state?new Date().toISOString():null,
+            operational_evidence:c.stage||c.state?c.text:null,responsavel:c.assignee||null,
+            legacy_data:{sender:c.sender,time:c.time,components:c.components,confidence:c.confidence,needsReview:c.needsReview,reviewReason:c.reviewReason}};
+        });
+        const executionRows=executions.map(c=>{
+          const key=[c.date,c.sender,c.text,c.os,c.tool,'execution'].join('|');
+          return {id:'exec-'+hash(key),source_key:'wa-exec:'+hash(key),source_name:sourceName,
+            extrusora:c.client.trim()||'Não identificado',tool_code:c.tool||null,os:c.os||null,
+            reference:null,service_type:c.type||'Não classificado',execution_date:c.date||null,
+            description:c.text,legacy_data:{sender:c.sender,time:c.time,components:c.components,confidence:c.confidence,needsReview:c.needsReview,reviewReason:c.reviewReason}};
+        });
+        if(entryRows.length){
+          const ins=await supabase.from('felj_entries').upsert(entryRows,{onConflict:'source_key',ignoreDuplicates:true});
+          if(ins.error)throw ins.error;
+          const links=entryRows.map(r=>({entry_id:r.id,execution_id:null,
+            status:'CONFERIR VÍNCULO',reason:'Entrada importada; aguarda conciliação com execução.',
+            manual:false,updated_by:currentUser.email||null}));
+          const lr=await supabase.from('felj_links').upsert(links,{onConflict:'entry_id',ignoreDuplicates:true});
+          if(lr.error)throw lr.error;
+          const correctionRows=entryRows.map(r=>({id:crypto.randomUUID(),client:r.extrusora,
+            os:r.os,reference:r.reference,profile_code:r.tool_code,request_type:r.service_type,
+            description:r.description,assignee:r.responsavel,received_at:r.received_at,due_at:r.due_date,
+            status:'Entrada registrada',status_note:'Importado pelo interpretador WhatsApp; requer conferência.',
+            source:'whatsapp-v2',requires_review:true,execution_group_seen:false}));
+          const cr=await supabase.from('correction_records').insert(correctionRows);
+          if(cr.error&&cr.error.code!=='23505')throw cr.error;
+        }
+        if(executionRows.length){
+          const ex=await supabase.from('felj_executions').upsert(executionRows,{onConflict:'source_key',ignoreDuplicates:true});
+          if(ex.error)throw ex.error;
+        }
+        const logs=[];
+        if(entries.length)logs.push({kind:'entry',source_name:sourceName,source_fingerprint:fingerprint,record_count:entryRows.length,imported_by:currentUser.email||null});
+        if(executions.length)logs.push({kind:'exec',source_name:sourceName,source_fingerprint:fingerprint,record_count:executionRows.length,imported_by:currentUser.email||null});
+        if(logs.length){const log=await supabase.from('felj_imports').upsert(logs,{onConflict:'kind,source_fingerprint',ignoreDuplicates:true});if(log.error)throw log.error;}
+        $('whatsappImportMessage').textContent='Concluído: '+eventRows.length+' mensagens preservadas, '+entryRows.length+' entradas novas, '+executionRows.length+' execuções novas. Atualizações e itens de revisão ficaram registrados para conciliação. Registros antigos não foram alterados.';
+        await loadCloudRecords();
+        $('whatsappPreview').innerHTML='';
+        $('whatsappSave').disabled=true;
+        setTimeout(()=>modal.close(),2500);
+      }catch(err){
+        $('whatsappImportMessage').textContent='Falha na importação: '+err.message;
+        $('whatsappSave').disabled=false;
+      }
+    });
   })();
 
   render();
