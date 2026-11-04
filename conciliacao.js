@@ -104,13 +104,12 @@
       match_score:executionId?score(selectedEntry,executions.find(x=>x.id===executionId)).score:null,
       match_reasons:executionId?score(selectedEntry,executions.find(x=>x.id===executionId)).why:[],
       candidate_count:old.candidate_count||0};
-    const saved=await supabase.from('felj_links').upsert(payload,{onConflict:'entry_id'});
-    if(saved.error){$('linkError').textContent=saved.error.message;return;}
-    const history=await supabase.from('felj_link_history').insert({
-      entry_id:selectedEntry.id,action:'VINCULO_'+status,note:note||'Revisão manual de vínculo',
-      previous_data:old,actor_email:user.email||null
+    const saved=await supabase.rpc('felj_set_link',{
+      p_entry_id:selectedEntry.id,p_execution_id:executionId,p_status:status,
+      p_reason:payload.reason,p_match_score:payload.match_score,
+      p_match_reasons:payload.match_reasons,p_actor_email:user.email||null
     });
-    if(history.error){$('linkError').textContent='Vínculo salvo, mas o histórico não foi gravado: '+history.error.message;return;}
+    if(saved.error){$('linkError').textContent=saved.error.message;return;}
     $('linkDialog').close();await load();
   }
   async function init(){
