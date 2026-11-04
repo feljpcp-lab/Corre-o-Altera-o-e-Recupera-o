@@ -28,7 +28,7 @@
       for (const pattern of headerPatterns) { match = line.match(pattern); if (match) break; }
       if (match) {
         if (current) messages.push(current);
-        current = { date: isoDate(match[1]), time: match[2], sender: match[3].trim().replace(/^[-–—]\\s*/, ''), text: match[4].trim(), rawLines: 1 };
+        current = { date: isoDate(match[1]), time: match[2], sender: match[3].trim().replace(/^[-–—]/, '').trim(), text: match[4].trim(), rawLines: 1 };
       } else if (current && line.trim()) {
         current.text += '\n' + line.trim(); current.rawLines++;
       } else if (!current && line.trim()) {
