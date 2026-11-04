@@ -1,0 +1,21 @@
+name: Validar Correções FELJ
+on:
+  push:
+    branches: [melhorias-correcoes-v1]
+  pull_request:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verificar sintaxe JavaScript
+        run: |
+          node --check app.js
+          node --check whatsapp-interpreter.js
+          node --check conciliacao.js
+      - name: Testar interpretador WhatsApp
+        run: node tests/whatsapp-interpreter.test.js
