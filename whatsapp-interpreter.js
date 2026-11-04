@@ -28,7 +28,7 @@
       for (const pattern of headerPatterns) { match = line.match(pattern); if (match) break; }
       if (match) {
         if (current) messages.push(current);
-        current = { date: isoDate(match[1]), time: match[2], sender: match[3].trim(), text: match[4].trim(), rawLines: 1 };
+        current = { date: isoDate(match[1]), time: match[2], sender: match[3].trim().replace(/^[-–—]\\s*/, ''), text: match[4].trim(), rawLines: 1 };
       } else if (current && line.trim()) {
         current.text += '\n' + line.trim(); current.rawLines++;
       } else if (!current && line.trim()) {
@@ -43,9 +43,9 @@
     const osMatches = [...text.matchAll(/\b(?:OS|O\.S\.?|ordem(?:\s+de\s+servico)?)\s*[:#-]?\s*(\d{4,7})\b/gi)].map(m => m[1]);
     const genericOs = !osMatches.length ? text.match(/\b(\d{5})\b/) : null;
     const osList = [...new Set(osMatches.length ? osMatches : (genericOs ? [genericOs[1]] : []))];
-    const toolMatches = [...text.matchAll(/\b(?:[A-Z]{1,5}[- ]?)?\d{2,5}[A-Z]{0,3}(?:[-/]\d{1,5}[A-Z]{0,2})?\b/gi)]
+    const toolMatches = [...text.matchAll(/\b[A-Z]{1,6}[- ]?\d{2,5}(?:[-/][A-Z0-9]{1,5}){0,3}\b/gi)]
       .map(m => m[0].replace(/\s+/g, '').toUpperCase())
-      .filter(v => !/^\d{4,7}$/.test(v) && !/^(19|20)\d{2}$/.test(v));
+      .filter(v => !/^\d{4,7}$/.test(v) && !/^(19|20)\d{2}$/.test(v) && !/^OS\d/i.test(v));
     const toolList = [...new Set(toolMatches)].slice(0, 12);
     const components = [];
     if (/\bmatriz\b/i.test(n)) components.push('Matriz');
